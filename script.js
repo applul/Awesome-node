@@ -23,3 +23,10 @@ console.log("Sync", file.toString());
 //         console.log(2, err)
 //     }
 // });
+
+//WRITE
+fs.writeFile('Holo.txt', "I love you HOLO! I'll see you in 30 seconds", err => {
+    if (err) {
+        console.log(err)
+    }
+})
