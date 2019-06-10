@@ -11,14 +11,15 @@ const file = fs.readFileSync('./Hello.txt');
 
 console.log("Sync", file.toString());
 
-fs.appendFile('./Hello.txt', ' Hello, Holo', err => {
-    if (err) {
-        console.log(1, err)
-    }
-});
+//Append
+// fs.appendFile('./Hello.txt', ' Hello, Holo', err => {
+//     if (err) {
+//         console.log(1, err)
+//     }
+// });
 
-fs.appendFile('./Seiba', 'Hello, Seiba', err => {
-    if (err) {
-        console.log(2, err)
-    }
-});
+// fs.appendFile('./Seiba', 'Hello, Seiba', err => {
+//     if (err) {
+//         console.log(2, err)
+//     }
+// });
