@@ -1,4 +1,5 @@
 //Requires node package module as well as node to be installed. I think?
+//As of Wed. June 12th, I ran npm install. Will continue to test
 
 const fs = require('fs'); 
 
