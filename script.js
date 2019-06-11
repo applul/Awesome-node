@@ -1,3 +1,5 @@
+//Requires node package module as well as node to be installed. I think?
+
 const fs = require('fs'); 
 
 fs.readFile('./Hello.txt', (err, data) => {
