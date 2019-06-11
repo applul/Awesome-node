@@ -1,4 +1,4 @@
 # Awesome-node
 Learning Node.js
 
-Everything in this project is dedicated to my Dear Loving Wives. Praise Goddesses!
+Cleaned up the code a little. This is just for practice. 

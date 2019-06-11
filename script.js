@@ -15,21 +15,29 @@ const fs = require('fs');
 // console.log("Sync", file.toString());
 
 //Append
-// fs.appendFile('./Hello.txt', ' Hello, Holo', err => {
+// fs.appendFile('./Hello.txt', ' Hello, H', err => {
 //     if (err) {
 //         console.log(1, err)
 //     }
 // });
 
-// fs.appendFile('./Seiba', 'Hello, Seiba', err => {
+// fs.appendFile('./Seiba', 'Hello, S', err => {
 //     if (err) {
 //         console.log(2, err)
 //     }
 // });
 
 //WRITE
-fs.writeFile('Holo.txt', "I love you HOLO! I'll see you in 30 seconds", err => {
+fs.writeFile('Apples.txt', "I'll see you in 30 seconds!", err => {
     if (err) {
         console.log(err)
     }
+})
+
+//DELETE 
+fs.unlink('./Apples.txt', err => {
+    if (err) {
+        console.log(err)
+    }
+    console.log("Secret Message has been erased. Shhhh....")
 })
