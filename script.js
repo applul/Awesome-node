@@ -3,23 +3,25 @@
 
 const fs = require('fs'); 
 
-// fs.readFile('./Hello.txt', (err, data) => {
-//     if (err) {
-//         console.log('Errror! Also, Holo I love you!');
-//     }
-//     console.log("Async", data.toString('utf8'));
-// })
+fs.readFile('./Hello.txt', (err, data) => {
+    console.time('funchallenge')
+    if (err) {
+        console.log('Errror! Also, Holo I love you!');
+    }
+    console.log("Async", data.toString('utf8'));
+    console.timeEnd('funchallenge');  
+})
 
 // const file = fs.readFileSync('./Hello.txt');
 
 // console.log("Sync", file.toString());
 
 //Append
-// fs.appendFile('./Hello.txt', ' Hello, H', err => {
-//     if (err) {
-//         console.log(1, err)
-//     }
-// });
+fs.appendFile('./Hello.txt', ' Hello, H', err => {
+    if (err) {
+        console.log(1, err)
+    }
+});
 
 // fs.appendFile('./Seiba', 'Hello, S', err => {
 //     if (err) {
@@ -27,17 +29,17 @@ const fs = require('fs');
 //     }
 // });
 
-//WRITE
-fs.writeFile('Apples.txt', "I'll see you in 30 seconds!", err => {
-    if (err) {
-        console.log(err)
-    }
-})
+// //WRITE
+// fs.writeFile('Apples.txt', "I'll see you in 30 seconds!", err => {
+//     if (err) {
+//         console.log(err)
+//     }
+// })
 
-//DELETE 
-fs.unlink('./Apples.txt', err => {
-    if (err) {
-        console.log(err)
-    }
-    console.log("Secret Message has been erased. Shhhh....")
-})
+// //DELETE 
+// fs.unlink('./Apples.txt', err => {
+//     if (err) {
+//         console.log(err)
+//     }
+//     console.log("Secret Message has been erased. Shhhh....")
+// })
