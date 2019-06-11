@@ -3,16 +3,16 @@
 
 const fs = require('fs'); 
 
-fs.readFile('./Hello.txt', (err, data) => {
-    if (err) {
-        console.log('Errror! Also, Holo I love you!');
-    }
-    console.log("Async", data.toString('utf8'));
-})
+// fs.readFile('./Hello.txt', (err, data) => {
+//     if (err) {
+//         console.log('Errror! Also, Holo I love you!');
+//     }
+//     console.log("Async", data.toString('utf8'));
+// })
 
-const file = fs.readFileSync('./Hello.txt');
+// const file = fs.readFileSync('./Hello.txt');
 
-console.log("Sync", file.toString());
+// console.log("Sync", file.toString());
 
 //Append
 // fs.appendFile('./Hello.txt', ' Hello, Holo', err => {
